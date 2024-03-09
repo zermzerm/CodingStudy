@@ -28,3 +28,7 @@
 {플랫폼}: {문제 이름}
 ```
 - 예시: `PGS: 리스트 자르기`
+
+---
+##### 해당 README는 다음 Repository를 참고하여 제작하였습니다.
+[Algorithm Study](https://github.com/CodeSquad-2023-BE-Study/Algorithm-Study/tree/main)
