@@ -1,8 +1,0 @@
-function solution(arr, queries) {
-    for(let a of queries){
-        for(let b = a[0]; b<=a[1]; b++){
-            if(b%a[2] === 0) ++arr[b];
-        }
-    }
-    return arr;
-}
