@@ -1,3 +1,9 @@
+/**
+ * URL https://school.programmers.co.kr/learn/courses/30/lessons/181897
+ * 문제 이름: 리스트 자르기
+ * 나의 실수: 마지막 case 4에서 slice 한 배열을 다시 filter 돌리는 걸 생각 못했다. 구글링 함 ㅎㅎ filter 기능에 익숙해져야겠다!!!
+ */
+
 function solution(n, slicer, num_list) {
     const [a,b,c] = [slicer[0],slicer[1],slicer[2]];
     switch(n){
