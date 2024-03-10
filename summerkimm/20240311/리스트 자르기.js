@@ -1,3 +1,8 @@
+/**
+ * URL https://school.programmers.co.kr/learn/courses/30/lessons/181897
+ * 문제 이름: 리스트 자르기
+ * 나의 실수: X
+ */
 function solution(n, slicer, num_list) {
   let [a, b, c] = slicer;
   let answer = [];
