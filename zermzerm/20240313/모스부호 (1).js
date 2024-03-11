@@ -5,8 +5,8 @@
  */
 
 function solution(letter) {
-  var answer = '';
-  var morse = {
+  let answer = '';
+  let morse = {
     '.-': 'a',
     '-...': 'b',
     '-.-.': 'c',
@@ -34,7 +34,7 @@ function solution(letter) {
     '-.--': 'y',
     '--..': 'z',
   };
-  var tmp = letter.split(' ');
+  let tmp = letter.split(' ');
   for (let i = 0; i < tmp.length; i++) {
     answer += morse[tmp[i]];
   }

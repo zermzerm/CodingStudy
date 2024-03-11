@@ -5,8 +5,8 @@
  */
 
 function solution(phone_number) {
-  var arr = phone_number.split('');
-  for (i = 0; i < arr.length; i++) {
+  let arr = phone_number.split('');
+  for (let i = 0; i < arr.length; i++) {
     if (arr.length - 4 - i > 0) {
       arr.splice(i, 1, '*');
     }
