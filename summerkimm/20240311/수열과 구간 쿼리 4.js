@@ -1,3 +1,9 @@
+/**
+ * URL: https://school.programmers.co.kr/learn/courses/30/lessons/181922
+ * 문제 풀이 포인트: 
+ * 나의 실수: X
+ */
+
 function solution(arr, queries) {
   for(let i = 0; i < queries.length; i++) {
       let [s, e, k] = queries[i];
@@ -8,4 +14,5 @@ function solution(arr, queries) {
       }
   }
   return arr;
+  
 }
