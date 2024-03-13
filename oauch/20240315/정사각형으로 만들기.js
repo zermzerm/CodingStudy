@@ -1,7 +1,8 @@
 /**
  * URL https://school.programmers.co.kr/learn/courses/30/lessons/181830
  * 문제 이름 : 정사각형으로 만들기
- * 문제점 : 예시 케이스만 보고 문제 풀지말자 🥹
+ * 문제점 : 행의 수만큼 또 반복 해줘야 하는데, 예시 케이스만 보고 고려를 안함
+ * 예시 케이스만 보고 문제 풀지말자 🥹
  */
 
 function solution(arr) {
