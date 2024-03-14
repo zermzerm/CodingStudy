@@ -1,28 +1,41 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/12951
- * 문제 풀이 포인트:
- * 나의 실수: 런타임 에러
+ * 문제 풀이 포인트: 노 포인트
+ * 나의 실수: 런타임 에러, 빈칸 생각 못함
  */
 
 //다시 푼 코드
 function solution(s) {
-  let answer = '';
-  return answer;
+  let arr = s.split(' ');
+  let answer = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] === ''
+      ? answer.push(arr[i])
+      : answer.push(
+          isNaN(arr[i][0])
+            ? arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase()
+            : arr[i][0] + arr[i].slice(1).toLowerCase()
+        );
+  }
+  return answer.join(' ');
 }
 
 //런타임 에러 코드
-// function solution(s) {
-//   let arr = s.split(' ');
-//   let answer = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     answer.push(
-//       isNaN(arr[i][0])
-//         ? arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase()
-//         : arr[i][0] + arr[i].slice(1).toLowerCase()
-//     );
-//   }
-//   return answer.join(' ');
-// }
+function solution(s) {
+  let arr = s.split(' ');
+  let answer = [];
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] !== '' &&
+      answer.push(
+        isNaN(arr[i][0])
+          ? arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase()
+          : arr[i][0] + arr[i].slice(1).toLowerCase()
+      );
+  }
+  return answer.join(' ');
+}
+
+// console.log(solution('  for the what 1what  '));
 
 //옛날에 푼 코드
 // function solution(s) {
