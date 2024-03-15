@@ -6,14 +6,14 @@
 
 //다시 푼 코드
 function solution(s) {
-  let arr = s.split('');
-  let cnt = 0;
-  if (arr[0] === ')') return false;
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] === '(' ? cnt++ : cnt--;
-    if (cnt < 0) return false;
+  let 배열종민 = s.split('');
+  let 개수종민 = 0;
+  if (배열종민[0] === ')') return false;
+  for (let i = 0; i < 배열종민.length; i++) {
+    배열종민[i] === '(' ? 개수종민++ : 개수종민--;
+    if (개수종민 < 0) return false;
   }
-  if (cnt === 0) return true;
+  if (개수종민 === 0) return true;
   else return false;
 }
 
