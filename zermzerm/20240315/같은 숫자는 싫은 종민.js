@@ -15,6 +15,11 @@ function solution(arr) {
   return answer;
 }
 
+//윤혁 filter 코드
+function solution(arr) {
+  return arr.filter((_, index) => arr[index] !== arr[index + 1]);
+}
+
 //효율성 다 떨어진 코드
 // function solution(arr) {
 //   for (let i = 1; i < arr.length; i++) {
