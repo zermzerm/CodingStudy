@@ -6,8 +6,8 @@
 
 function solution(numLog) {
   let 배열종민 = '';
-  for (let i = 0; i < numLog.length; i++) {
-    switch (numLog[i + 1] - numLog[i]) {
+  for (let 아이종민 = 0; 아이종민 < numLog.length; 아이종민++) {
+    switch (numLog[아이종민 + 1] - numLog[아이종민]) {
       case 1:
         배열종민 += 'w';
         break;

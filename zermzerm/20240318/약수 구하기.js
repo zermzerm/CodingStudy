@@ -6,8 +6,8 @@
 
 function solution(n) {
   let 배열종민 = [];
-  for (let i = 1; i <= n; i++) {
-    if (n % i === 0) 배열종민.push(i);
+  for (let 아이종민 = 1; 아이종민 <= n; 아이종민++) {
+    if (n % 아이종민 === 0) 배열종민.push(아이종민);
   }
   return 배열종민;
 }
