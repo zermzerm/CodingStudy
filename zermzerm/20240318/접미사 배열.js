@@ -5,9 +5,9 @@
  */
 
 function solution(my_string) {
-  let answer = [];
-  for (let i = 0; i < my_string.length; i++) {
-    answer.push(my_string.slice(i));
+  let 배열종민 = [];
+  for (let 아이종민 = 0; 아이종민 < my_string.length; 아이종민++) {
+    배열종민.push(my_string.slice(아이종민));
   }
-  return answer.sort();
+  return 배열종민.sort();
 }
