@@ -5,7 +5,7 @@
  */
 
 let [N, ...input] = require("fs")
-  .readFileSync("qooktree1/추가 문제/test.txt")
+  .readFileSync("/dev/stdin")
   .toString()
   .split("\n");
 N = +N;
