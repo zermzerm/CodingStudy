@@ -1,7 +1,7 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/120864
- * 문제 풀이 포인트:
- * 나의 실수:
+ * 문제 풀이 포인트: 정규식, reduce
+ * 나의 실수: X
  */
 
 //다시 푼 코드
