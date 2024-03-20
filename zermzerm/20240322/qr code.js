@@ -1,6 +1,6 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/181903
- * 문제 풀이 포인트: Number.isInteger와 **0.5
+ * 문제 풀이 포인트: for
  * 나의 실수: X
  */
 
