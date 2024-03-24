@@ -17,6 +17,7 @@ const solution = (d, budget) => {
     }
     cnt++;
   }
+  return cnt;
 };
 
 console.log(solution([2, 2, 3, 3], 10));
