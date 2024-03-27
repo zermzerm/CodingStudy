@@ -9,10 +9,12 @@ const solution = (n, words) => {
   let cnt = 1;
   let arr = [words[0]];
   for (let i = 1; i < words.length; i++) {
-    if (arr.includes(words[i])) return [member, cnt];
-    else arr.push(words[i]);
-    if (words[i][0] !== words[i - 1][words[i - 1].length - 1])
+    if (
+      arr.includes(words[i]) ||
+      words[i][0] !== words[i - 1][words[i - 1].length - 1]
+    )
       return [member, cnt];
+    else arr.push(words[i]);
     member++;
     if (member > n) {
       member = 1;
@@ -24,15 +26,15 @@ const solution = (n, words) => {
 
 console.log(
   solution(3, [
-    "tank",
-    "kick",
-    "know",
-    "wheel",
-    "land",
-    "dream",
-    "mother",
-    "robot",
-    "tank",
+    'tank',
+    'kick',
+    'know',
+    'wheel',
+    'land',
+    'dream',
+    'mother',
+    'robot',
+    'tank',
   ])
 );
 
