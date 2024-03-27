@@ -9,9 +9,9 @@ const solution = (n) => {
   for (let i = 0; i < arr.length; i++) {
     let tmpArr = arr[i].split('');
     for (let j = 0; j < tmpArr.length; j++) {
-      j % 2 === 0
-        ? tmpArr.splice(j, 1, tmpArr[j].toUpperCase())
-        : tmpArr.splice(j, 1, tmpArr[j].toLowerCase());
+      j % 2
+        ? tmpArr.splice(j, 1, tmpArr[j].toLowerCase())
+        : tmpArr.splice(j, 1, tmpArr[j].toUpperCase());
     }
     arr[i] = tmpArr.join('');
   }
