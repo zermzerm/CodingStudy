@@ -5,17 +5,17 @@
  */
 
 const solution = (n) => {
-  let answer = [];
+  let answer = new Set();
   let index = 2;
   while (n != 1) {
     if (n % index === 0) {
       n /= index;
-      answer.push(index);
+      answer.add(index);
     } else {
       index++;
     }
   }
-  return [...new Set(answer)];
+  return [...answer];
 };
 
 console.log(solution(12));
