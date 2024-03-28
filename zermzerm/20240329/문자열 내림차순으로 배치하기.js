@@ -13,8 +13,6 @@ const solution = (s) => {
   return small.sort().reverse().join("") + big.sort().reverse().join("");
 };
 
-console.log(solution("Zbcdefg"));
-
 //다른 사람 풀이
 function solution(s) {
   return s.split("").sort().reverse().join("");
