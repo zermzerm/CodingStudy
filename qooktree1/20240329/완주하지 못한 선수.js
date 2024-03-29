@@ -15,5 +15,8 @@ const solution = (participants, completion) => {
   for (const test of completion) {
     participantMap[test]--;
   }
-  return Object.entries(participantMap).filter((item) => item[1] === 1)[0][0];
+
+  for (const [key, value] of participantMap) {
+    if (value >= 1) return key;
+  }
 };
