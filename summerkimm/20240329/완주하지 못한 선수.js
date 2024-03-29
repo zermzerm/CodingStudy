@@ -4,17 +4,17 @@
  * 다시 풀기!
  */
 
-// 미해결
 function solution(participant, completion) {
-  let hashMap = new Map();
+  let result = new Map();
 
-  for (let i = 0; i < participant.length; i++) {
-    hashMap.set(participant[i], 1);
-  }
+  participant.map((val) =>
+    result.has(val) ? result.set(val, result.get(val) + 1) : result.set(val, 1)
+  );
+  completion.map(
+    (val) => result.has(val) && result.set(val, result.get(val) - 1)
+  );
 
-  for (let j = 0; j < completion.length; j++) {
-    if (hashMap.has(completion[j])) {
-      console.log(hashMap.get(completion[j]));
-    }
+  for (let [key, val] of result) {
+    if (val !== 0) return key;
   }
 }
