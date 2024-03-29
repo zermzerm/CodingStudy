@@ -16,7 +16,7 @@ const solution = (participants, completion) => {
     participantMap[test]--;
   }
 
-  for (const [key, value] of participantMap) {
+  for (const [key, value] of Object.entries(participantMap)) {
     if (value >= 1) return key;
   }
 };
