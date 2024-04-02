@@ -1,5 +1,11 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/42748?language=javascript
+ * 접근 방식
+ * - commands 각각 배열 원소를 돌아야 하므로 for문 사용
+ * - 구조 분해 할당을 통해 해당 배열을 각각 i, k, j에 대입 
+ * - array의 i번째 숫자부터 j번쨰 숫자까지 자르는데, 단 인덱스가 1부터 시작하므로 slice 첫 번째 원소에 -1
+ * - 오름차순으로 정렬: sort() 
+ * - 해당 원소를 새로운 배열에 담아 return! 
  */
 
 function solution(array, commands) {
