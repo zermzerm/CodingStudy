@@ -7,7 +7,6 @@
 
 function solution(s) {
 
-
 //   if (s.length !== 4 || s.length !== 6) { // 안 되는 이유????
   if (!(s.length === 4 || s.length === 6)) {
     return false;
