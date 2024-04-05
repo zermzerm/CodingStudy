@@ -1,7 +1,7 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/42842
- * 문제 이름 :
- * 문제 풀이 포인트:
+ * 문제 이름 : 카펫
+ * 문제 풀이 포인트: yellow의 약수들로 구해서 약수 각각 2 곱하고 2 더한걸 더했을 때 brown이면 정답
  * 나의 실수:
  */
 
