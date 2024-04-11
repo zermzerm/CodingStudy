@@ -23,7 +23,6 @@ function DFS(graph, start) {
     if (!visited.includes(node)) {
       visited.push(node);
       needVisit = [...graph[node], ...needVisit];
-      console.log(needVisit);
     }
   }
   return visited;
