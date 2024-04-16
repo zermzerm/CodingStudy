@@ -1,7 +1,7 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/42586
  * 문제 이름 : 종능 개발
- * 문제 풀이 포인트: 완료하는데 필요한 날짜 따로 배열로 만들고, 그거 가지고 for 돌려서 stack의 마지막 애랑 배교해서 cnt 추가
+ * 문제 풀이 포인트: 스택/큐! 완료하는데 필요한 날짜 따로 배열로 만들고, 그거 가지고 for 돌려서 stack의 마지막 애랑 배교해서 cnt 추가
  * 나의 실수:
  */
 
