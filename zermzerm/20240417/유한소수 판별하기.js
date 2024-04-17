@@ -5,7 +5,7 @@
  * 나의 실수: 최대 공약수 구하는 쉬운방법을 이제야 알았다...
  */
 
-//최대공약수 구하는 방법
+// 풀고나서 배운 최대공약수 구하는 방법
 // function GCD(a, b) {
 //   let gcd = 1;
 //   for (let i = 1; i <= Math.min(a, b); i++) {
@@ -30,6 +30,8 @@ function solution(a, b) {
       if (aArr[i] === bArr[j]) cd.push(aArr[i]);
     }
   }
+  //여기까지를 위의 최대공약수 구하는 방법으로 간단하게 줄일 수 있다..!
+
   b /= Math.max(...cd);
   while (b % 2 === 0) b /= 2;
   while (b % 5 === 0) b /= 5;

@@ -16,7 +16,6 @@ function solution(n, lost, reserve) {
       i--;
     }
   }
-  console.log(lost, reserve);
   for (let i = 0; i < lost.length; i++) {
     for (let j = 0; j < reserve.length; j++) {
       if (Math.abs(lost[i] - reserve[j]) === 1) {
