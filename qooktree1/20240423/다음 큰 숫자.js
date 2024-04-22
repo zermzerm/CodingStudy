@@ -1,6 +1,6 @@
 /**
  * URL: https://school.programmers.co.kr/learn/courses/30/lessons/12911
- * 문제 풀이 포인트: 조건 1,2, 3을 순서대로 구현한다.
+ * 문제 풀이 포인트: toString을 이용한 진수 변환
  * 나의 실수: X
  * [ 풀이 과정 ]
  * 1. toString을 이용하여 2진수를 만든 후 1의 개수를 비교한다.
