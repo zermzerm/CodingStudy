@@ -18,23 +18,26 @@ function solution(polynomial) {
     numValue = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].includes("x")) {
-      let num = +arr[i].replace(/[^0-9]/g, "");
+      let num = arr[i].replace(/[^0-9]/g, "");
       if (num === 0) num = 1;
+      if (arr[i] === "-x") num = -1;
       xValue += calc(arr[i - 1], num);
     } else if (Number.isInteger(+arr[i])) {
       let num = +arr[i];
       numValue += calc(arr[i - 1], num);
     }
   }
+  console.log(xValue);
   if (xValue === 1) xValue = "";
+  if (xValue === -1) xValue = "- ";
   if (xValue === 0) return `${numValue}`;
   if (numValue === 0) return `${xValue}x`;
-  return `${xValue}x ${
+  return `${xValue < 0 ? "- " + Math.abs(xValue) : xValue}x ${
     numValue < 0 ? "- " + Math.abs(numValue) : "+ " + numValue
   }`;
 }
 
-console.log(solution("x + 1"));
+console.log(solution("- 3x"));
 
 /* 예전에 푼 코드
 function solution(polynomial) {
