@@ -32,12 +32,12 @@ function solution(polynomial) {
   if (xValue === -1) xValue = "- ";
   if (xValue === 0) return `${numValue}`;
   if (numValue === 0) return `${xValue}x`;
-  return `${xValue < 0 ? "- " + Math.abs(xValue) : xValue}x ${
+  return `${xValue}x ${
     numValue < 0 ? "- " + Math.abs(numValue) : "+ " + numValue
   }`;
 }
 
-console.log(solution("- 3x"));
+console.log(solution("- 3x - 1"));
 
 /* 예전에 푼 코드
 function solution(polynomial) {
