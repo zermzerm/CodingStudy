@@ -6,6 +6,7 @@
  */
 
 // 종민님 코드 대박
+// 절대값이 같으면 0 -> ||은 0은 false값이라서 뒤에거로 됨 그래서 b-a로
 function solution(numlist, n) {
   return (sortArr = numlist.sort(
     (a, b) => Math.abs(a - n) - Math.abs(b - n) || b - a
