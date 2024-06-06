@@ -7,7 +7,7 @@
 //다시 푼 코드
 function solution(my_string) {
   return my_string
-    .replace(/[a-zA-Z]/g, ',')
+    .replace(/[A-z]/g, ',')
     .split(',')
     .reduce((acc, cur) => acc + +cur, 0);
 }

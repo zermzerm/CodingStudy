@@ -6,6 +6,8 @@
 
 //reduce 공부 코드
 function solution(left, right) {
+  // console.log(Array(20).fill((_, idx) => idx));
+  // console.log(Array.from(Array(right - left + 1), (_, idx) => idx + left));
   return Array.from(Array(right - left + 1), (_, index) => index + left).reduce(
     (acc, cur) => (Number.isInteger(cur ** 0.5) ? acc - cur : acc + cur),
     0

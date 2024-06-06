@@ -9,9 +9,9 @@
 function solution(s) {
   let cnt = 0,
     zeroCnt = 0;
-  while (s !== "1") {
+  while (s !== '1') {
     if (s.match(/0/g)) zeroCnt += s.match(/0/g).length;
-    s = s.replace(/0/g, "").length.toString(2);
+    s = s.replace(/0/g, '').length.toString(2);
     cnt++;
   }
   return [cnt, zeroCnt];
@@ -32,7 +32,7 @@ function solution(s) {
 //   return [cnt, zeroCnt];
 // }
 
-console.log(solution("1111111"));
+console.log(solution('1111111'));
 
 //예전에 푼 코드
 // function solution(s) {

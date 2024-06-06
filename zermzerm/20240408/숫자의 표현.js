@@ -10,7 +10,7 @@ function solution(n) {
   let cnt = 1;
   let sum = 0;
   let idx = 1;
-  for (let i = 1; i < Math.ceil(n / 1); i++) {
+  for (let i = 1; i < Math.ceil(n / 2); i++) {
     sum += i;
     if (sum === n) {
       cnt++;

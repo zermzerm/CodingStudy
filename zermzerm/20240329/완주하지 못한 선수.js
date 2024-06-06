@@ -12,10 +12,13 @@ const solution = (participant, completion) => {
       ? obj.set(participant[i], obj.get(participant[i]) + 1)
       : obj.set(participant[i], 1);
   }
+  console.log(obj);
   for (let i = 0; i < completion.length; i++) {
     obj.set(completion[i], obj.get(completion[i]) - 1);
     if (obj.get(completion[i]) === 0) obj.delete(completion[i]);
   }
+  // console.log([[1], [2], [3], [4]].flat());
+  // console.log(obj);
   return [...obj].flat()[0];
 };
 
@@ -30,7 +33,7 @@ const solution = (participant, completion) => {
 
 console.log(
   solution(
-    ["marina", "josipa", "nikola", "marina", "vinko", "filipa"],
-    ["josipa", "filipa", "marina", "nikola", "marina"]
+    ['marina', 'josipa', 'nikola', 'marina', 'vinko', 'filipa'],
+    ['josipa', 'filipa', 'marina', 'nikola', 'marina']
   )
 );

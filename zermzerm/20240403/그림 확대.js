@@ -13,6 +13,7 @@ function solution(picture, k) {
     for (let j = 0; j < picture[i].length; j++) {
       tmp += picture[i][j].repeat(k);
     }
+    // 문자열.concat(문자열) => 문자열 합치기
     answer = answer.concat(Array(k).fill(tmp));
   }
   return answer;
