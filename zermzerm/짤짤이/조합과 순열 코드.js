@@ -22,53 +22,53 @@
 // console.log(combinations);
 
 // 순열
-// function getPermutations(arr, n) {
-//   let results = [];
+function getPermutations(arr, n) {
+  let results = [];
 
-//   if (n === 1) {
-//       return arr.map(item => [item]);
-//   }
+  if (n === 1) {
+      return arr.map(item => [item]);
+  }
 
-//   arr.forEach((current, index) => {
-//       const remaining = arr.slice(0, index).concat(arr.slice(index + 1));
-//       const smallerPermutations = getPermutations(remaining, n - 1);
-//       smallerPermutations.forEach(permutation => {
-//           results.push([current, ...permutation]);
-//       });
-//   });
+  arr.forEach((current, index) => {
+      const remaining = arr.slice(0, index).concat(arr.slice(index + 1));
+      const smallerPermutations = getPermutations(remaining, n - 1);
+      smallerPermutations.forEach(permutation => {
+          results.push([current, ...permutation]);
+      });
+  });
 
-//   return results;
-// }
-
-// const array = [1, 2,1];
-// const n = 3;
-// const permutations = getPermutations(array, n);
-// console.log(permutations);
-
-//순열2
-function permute(arr) {
-  let result = [];
-
-  const permuteHelper = (currentArr, remainingArr) => {
-      if (remainingArr.length === 0) {
-          result.push(currentArr);
-      } else {
-          let unique = new Set();
-          for (let i = 0; i < remainingArr.length; i++) {
-              if (!unique.has(remainingArr[i])) {
-                  unique.add(remainingArr[i]);
-                  permuteHelper(
-                      currentArr.concat(remainingArr[i]), 
-                      remainingArr.slice(0, i).concat(remainingArr.slice(i + 1))
-                  );
-              }
-          }
-      }
-  };
-
-  permuteHelper([], arr);
-  return result;
+  return results;
 }
 
-let permutations = permute([1, 1, 2]);
+const array = [1, 2,3];
+const n = 3;
+const permutations = getPermutations(array, n);
 console.log(permutations);
+
+//순열2
+// function permute(arr) {
+//   let result = [];
+
+//   const permuteHelper = (currentArr, remainingArr) => {
+//       if (remainingArr.length === 0) {
+//           result.push(currentArr);
+//       } else {
+//           let unique = new Set();
+//           for (let i = 0; i < remainingArr.length; i++) {
+//               if (!unique.has(remainingArr[i])) {
+//                   unique.add(remainingArr[i]);
+//                   permuteHelper(
+//                       currentArr.concat(remainingArr[i]), 
+//                       remainingArr.slice(0, i).concat(remainingArr.slice(i + 1))
+//                   );
+//               }
+//           }
+//       }
+//   };
+
+//   permuteHelper([], arr);
+//   return result;
+// }
+
+// let permutations = permute([1, 1, 2]);
+// console.log(permutations);
