@@ -12,6 +12,8 @@
     maps[newRow][newCol] === 1 && !visited[newRow][newCol] 이게 더 효율적임
     => 이해 X
 */
+
+//BFS
 function solution(maps) {
   // 총 행렬
   let rows = maps.length;
