@@ -1,5 +1,5 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/154539
-// 뒤에서 부터 찾기?
+// 뒤에서 부터 찾기?, 스택 사용
 function solution(numbers) {
   let maxnum = 0;
   let stack = [];
