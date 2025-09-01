@@ -4,6 +4,17 @@
  * 나의 실수: 너무 for가 많아... 다른 방법이 없을까
  */
 
+//최대공약수
+function GCD(n, m) {
+  let gcd = 1;
+  for (let i = 1; i <= Math.min(n, m); i++) {
+    if (n % i === 0 && m % i === 0) gcd = i;
+  }
+  return gcd;
+}
+
+//두 자연수의 곱 = 최대공약수 * 최소공배수
+
 function solution(n, m) {
   let answer = [];
   let nArr = [],
